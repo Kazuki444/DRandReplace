@@ -6,7 +6,7 @@ An image which the object erased from by image processing use as a background of
 which is the same category as the recognized category. This system operates on one smartphone.
 
 # DEMO
-https://user-images.githubusercontent.com/49668858/79317777-129b7080-7f41-11ea-843e-b54dbf0959e1.gif
+![result2](https://user-images.githubusercontent.com/49668858/79317777-129b7080-7f41-11ea-843e-b54dbf0959e1.gif)
 
 椅子を認識して、椅子の仮想オブジェクトで置換している
 ときどき、実物体である椅子を完全に消去できないときが発生している
