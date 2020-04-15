@@ -6,3 +6,4 @@ An image which the object erased from by image processing use as a background of
 which is the same category as the recognized category. This system operates on one smartphone
 
 #DMEO
+https://user-images.githubusercontent.com/49668858/79314762-16c58f00-7f3d-11ea-90a6-fef2e94fec62.gif
