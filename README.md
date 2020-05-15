@@ -21,3 +21,5 @@ ARCore-Unity-SDKのComputerVisionサンプルの要領で画像を取得し、YO
 # Note
 ARCore-Unity-SDKのComputerVisionのように処理した画像をそのままARBackgroundマテリアルに設定しようとしたが、
 上手く動作しなかったため、Canvasに張り付けた
+
+現在、AndroidStudioでTensorflowLiteを使って改良中（2020/5/31までには完成させる）
