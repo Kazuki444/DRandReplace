@@ -6,17 +6,24 @@ An image which the object erased from by image processing use as a background of
 which is the same category as the recognized category. This system operates on one smartphone.
 
 # DEMO
-![result2](https://user-images.githubusercontent.com/49668858/79317777-129b7080-7f41-11ea-843e-b54dbf0959e1.gif)
+<img src="https://user-images.githubusercontent.com/49668858/82035368-62a15a80-96da-11ea-81a4-c59c31791927.png" width=40%> <img src="https://user-images.githubusercontent.com/49668858/82035364-61702d80-96da-11ea-88f5-465f9f8a157b.png" width=40%>
+
+左：従来のARアプリ　　　右：本システム
+
+[実行動画](https://drive.google.com/open?id=1SDFrPQzhKp-OXAZQZ993pWjoSaDTMDMI)
 
 椅子を認識して、椅子の仮想オブジェクトで置換している
 ときどき、実物体である椅子を完全に消去できないときが発生している
 
-同じ空間に数種類の物体があっても、事前に仮想オブジェクトを用意しておけば対応可能
+事前に数種類の仮想オブジェクトを用意しておく必要がある
 
 # How it works
 ARCore-Unity-SDKのHelloARサンプルをもとに作成
-ARCore-Unity-SDKのComputerVisionサンプルの要領で画像を取得し、YOLOv3-tinyで画像認識を行う
-認識結果に対応した仮想オブジェクトを配置する
+ARCore-Unity-SDKのComputerVisionサンプルの要領で画像を取得する
+
+1. YOLOv3-tinyで除去対象のクラスと除去対象領域を認識
+1. 除去対象領域をInpainting
+1. 除去対象のクラスと同じクラスの仮想オブジェクトで置換
 
 # Note
 ARCore-Unity-SDKのComputerVisionのように処理した画像をそのままARBackgroundマテリアルに設定しようとしたが、
